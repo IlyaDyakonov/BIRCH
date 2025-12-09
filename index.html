@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крестики-нолики | Играй и выигрывай!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>✨ Крестики-нолики ✨</h1>
+            <p class="subtitle">Играй и выигрывай промокоды!</p>
+        </header>
+
+        <div class="game-info">
+            <div class="player-info">
+                <div class="player-badge you">
+                    <span class="player-icon">👤</span>
+                    <span class="player-name">Вы</span>
+                </div>
+                <div class="player-badge computer">
+                    <span class="player-icon">💻</span>
+                    <span class="player-name">Компьютер</span>
+                </div>
+            </div>
+            <div class="turn-indicator">
+                <span id="current-turn">Ваш ход</span>
+            </div>
+        </div>
+
+        <div class="game-board" id="gameBoard">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+
+        <button class="reset-btn" id="resetBtn">🔄 Новая игра</button>
+    </div>
+
+    <!-- Модальное окно победы -->
+    <div class="modal" id="winModal">
+        <div class="modal-content win-modal">
+            <div class="modal-icon">🎉</div>
+            <h2>Поздравляем!</h2>
+            <p>Вы выиграли!</p>
+            <div class="promo-code">
+                <p class="promo-label">Ваш промокод на скидку:</p>
+                <div class="promo-value" id="promoCode">XXXXX</div>
+            </div>
+            <button class="modal-btn" id="playAgainWin">Играть снова</button>
+        </div>
+    </div>
+
+    <!-- Модальное окно проигрыша -->
+    <div class="modal" id="loseModal">
+        <div class="modal-content lose-modal">
+            <div class="modal-icon">💝</div>
+            <h2>Не расстраивайтесь!</h2>
+            <p>Попробуйте ещё раз</p>
+            <button class="modal-btn" id="playAgainLose">Играть снова</button>
+        </div>
+    </div>
+
+    <!-- Модальное окно ничьей -->
+    <div class="modal" id="drawModal">
+        <div class="modal-content draw-modal">
+            <div class="modal-icon">🤝</div>
+            <h2>Ничья!</h2>
+            <p>Попробуйте ещё раз</p>
+            <button class="modal-btn" id="playAgainDraw">Играть снова</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
