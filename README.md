@@ -29,8 +29,8 @@
 Откройте файл `script.js` и найдите строки в начале:
 
 ```javascript
-const TELEGRAM_BOT_TOKEN = '6698583243:AAEUqrd6Zk1K5bgAW6W_Il2rcmx-a2SFjDw';
-const TELEGRAM_CHAT_ID = '485165808';
+const TELEGRAM_BOT_TOKEN = 'YOUR_BOT_TOKEN';
+const TELEGRAM_CHAT_ID = 'YOUR_CHAT_ID';
 ```
 ВАМ НУЖНО УКАЗАТЬ ЛИЧНЫЙ ID ВАШЕГО ТЕЛЕГРАММА в файле **[script.js](script.js)**!
 Замените значения на свои, если используете другого бота.
